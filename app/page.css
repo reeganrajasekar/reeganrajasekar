@@ -1,0 +1,69 @@
+section{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.top{
+    min-height: 90svh !important;
+}
+.btn-border{
+    border: 2px solid white;
+    outline: 2px solid #f43b47;
+    background-color: white;
+    color: #f43b47;
+    font-size: 1.2rem;
+    font-weight: 700;
+    transition: all 100ms;
+}
+.btn-border:hover{
+    border: 2px solid white;
+    outline: 2px solid #f43b47;
+    background-color: #f43b47;
+    color: white;
+}
+.btn-full{
+    border: 2px solid #f43b47;
+    outline: 4px  solid white;
+    background-color: #f43b47;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+    transition: all 100ms;
+}
+.btn-full:hover{
+    outline: 4px solid #f43b4766;
+    border: 2px solid #f43b47;
+    background-color: white;
+    color: #f43b47;
+}
+h1{
+    font-size: 3.8rem;
+    font-weight: 800;
+    color: #444444;
+}
+h1>span{
+    background: linear-gradient(135deg, #f43b47 0%, #453a94 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.heading{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #f43b47;
+    text-align: center;
+}
+.social>a>img:hover{
+    transform: rotate(360deg);
+    animation: blink 2s infinite;
+}
+@keyframes blink {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}

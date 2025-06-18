@@ -1,0 +1,14 @@
+.heading{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #f43b47;
+    text-align: center;
+}
+section{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.top{
+    min-height: 90svh !important;
+}
