@@ -5,7 +5,7 @@
 
 <p align="center">
   <a href="https://reegan.is-a.dev" target="_blank"><img src="https://img.shields.io/badge/Portfolio-reegan.is--a.dev-0A66C2?style=for-the-badge&logo=Google-Chrome&logoColor=white"/></a>
-  <a href="="https://linkedin.com/in/reeganrajasekar" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-reeganrajasekar-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+  <a href="https://linkedin.com/in/reeganrajasekar" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-reeganrajasekar-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
   <a href="mailto:areeganrajasekar@gmail.com"><img src="https://img.shields.io/badge/Email-areeganrajasekar@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/></a>
 </p>
 
