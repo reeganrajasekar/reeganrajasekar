@@ -1,6 +1,7 @@
 <h1 align="center">👋 Hi, I'm Reegan Rajasekar</h1>
 <p align="center">
-  <b>Full-Stack Developer</b> | PHP • Angular • React • .NET • Azure | Night Shift & Remote Friendly 🌙
+  <b>Full-Stack Developer</b> | PHP • Angular • React • .NET • Azure  
+  <br/>🌙 Night Shift & Remote Friendly
 </p>
 
 <p align="center">
@@ -13,19 +14,21 @@
 
 ## 🧑‍💻 About Me
 
-I'm a Full-Stack Developer with over **2 years of experience** building scalable and secure web applications across both frontend and backend.  
-From building complex Angular dashboards to designing REST APIs and deploying on Azure — I work full-stack with a product-first mindset.
+I'm a Full-Stack Developer with over **2 years of experience** building scalable, secure, and user-friendly web applications across both frontend and backend stacks.  
+I’ve worked with startups and enterprise teams to deliver real-world products from scratch — including admin dashboards, internal tools, public-facing apps, and API services.
 
-💡 I’ve led startup teams as a **CTO-level engineer**, built internal tools, managed cloud deployment, and worked with enterprise tech stacks.
+🔹 I specialize in Angular + .NET, but I’m also confident with React, PHP, and Node.js.  
+🔹 I focus on clean architecture, maintainable code, and fast delivery.  
+🔹 I'm open to **remote (WFH)** and **night shift** roles.
 
 ---
 
-## 🔧 Tech Stack
+## 🧰 Tech Stack
 
 ```txt
-💻 Languages      : JavaScript, TypeScript, PHP, C#, SQL
-🌐 Frontend       : Angular, React.js, Next.js, HTML, Tailwind, Bootstrap
-⚙️ Backend        : PHP (Core + REST APIs), Node.js, ASP.NET Core
-🛢️ Databases      : MySQL, SQL Server, MongoDB, Redis
-☁️ DevOps/Cloud   : Microsoft Azure, Docker, GitHub Actions, CI/CD
-🧰 Tools          : Git, Figma, Postman, Linux, Azure DevOps
+💻 Languages       : JavaScript, TypeScript, PHP, C#, SQL
+🌐 Frontend        : Angular, React.js, Next.js, HTML, Tailwind, Bootstrap
+⚙️ Backend         : PHP (Core + REST APIs), Node.js, ASP.NET Core
+🛢️ Databases       : MySQL, SQL Server, MongoDB, Redis
+☁️ Cloud/DevOps    : Microsoft Azure, Docker, GitHub Actions, CI/CD
+🛠️ Tools           : Git, Figma, Postman, Linux, Azure DevOps

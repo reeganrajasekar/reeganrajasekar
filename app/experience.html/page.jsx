@@ -15,23 +15,23 @@ export default function Experience() {
               <div className="date">UBTIINC</div>
               <div className="title">Fullstack Developer ( 2023-now )</div>
               <div className="descr text-secondary h6">Junior Software Engineer</div>
-              <div class="badges px-2 mb-2">
-                <span class="bg-danger">Angular</span>
-                <span class="bg-primary">.NET CORE</span>
-                <span class="sql">SQL Server</span>
+              <div className="badges px-2 mb-2">
+                <span className="bg-danger">Angular</span>
+                <span className="bg-primary">.NET CORE</span>
+                <span className="sql">SQL Server</span>
               </div>
             </li>
             <li style={{'--accent-color':'#1B5F8C'}} className='shadow'>
               <div className="date">Sirius , A CDW Company</div>
               <div className="title">Fullstack Developer ( 2022 )</div>
               <div className="descr text-secondary h6">Intern</div>
-              <div class="badges px-2 mb-2">
-                <span class="html">HTML</span>
-                <span class="css">CSS</span>
-                <span class="js">JavaScript&JQuery</span>
-                <span class="react">React</span>
-                <span class="node">NodeJS(Express JS)</span>
-                <span class="mongo">MongoDB</span>
+              <div className="badges px-2 mb-2">
+                <span className="html">HTML</span>
+                <span className="css">CSS</span>
+                <span className="js">JavaScript&JQuery</span>
+                <span className="react">React</span>
+                <span className="node">NodeJS(Express JS)</span>
+                <span className="mongo">MongoDB</span>
               </div>
             </li>
         </ul>

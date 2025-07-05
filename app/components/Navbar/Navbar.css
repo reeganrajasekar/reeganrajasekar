@@ -1,48 +1,120 @@
-.navbar{
+/* === Navbar Base === */
+.navbar {
     z-index: 1000;
-    font-family:Arial, Helvetica, sans-serif;
-    padding:5px 0px;
-    position:sticky !important;
-    top:0px;
-    background-color: #ffffffee !important;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px 0;
+    position: sticky !important;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(10px);
+    transition: background-color 0.3s ease;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
 }
-.nav-item{
-    font-size: 1.2rem;
-    margin:0px 7px;
+
+/* === Logo === */
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+/* === Nav Items (Desktop) === */
+.nav-item {
+    font-size: 1.1rem;
+    margin: 0 10px;
     font-weight: 500;
     text-align: center;
 }
-.nav-link{
-    transition: all 100ms;
+
+.nav-link {
+    color: #222;
+    text-decoration: none;
+    transition: color 200ms ease;
 }
-.nav-item .active{
+
+.nav-link:hover,
+.nav-item .active {
     color: #f43b47 !important;
 }
-.nav-link:hover{
-    color: #f43b47 !important;
-}
-.logo{
-    height:50px;
-    width:auto
-}
-.mobilenav{
+
+/* === Mobile Nav Drawer === */
+/* === Mobile Nav Drawer === */
+.mobilenav {
     position: fixed;
-    top:0px;
-    bottom: 0px;
-    left:0px;
-    right:0px;
-    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     height: 100vh;
-    padding-right:20px;
+    width: 100vw;
+    z-index: 2000;
+    background-color: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(12px);
     display: flex;
-    background-color: #ffffffdd;
+    flex-direction: column;
     justify-content: center;
+    align-items: flex-end;
+    padding: 2rem 2.5rem;
+    gap: 2rem;
+    overflow-y: auto;
+
+    /* 🧼 Bulletpoint fix */
+    list-style: none;
+    padding-left: 0;
 }
-.mobilenav>.nav-item{
-    text-align: right;
-    font-size: 2.5rem;
-    font-weight: 700;
+
+.mobilenav .nav-item {
+    font-size: 2rem;
+    font-weight: 600;
+    width: 100%;
+    list-style: none;
+    /* 🧼 */
 }
-.mobilenav>.nav-item>.nav-link{
+
+.mobilenav .nav-link {
+    color: #111;
+    text-decoration: none;
+    display: inline-block;
+    /* 🧼 */
+    transition: all 0.2s ease-in-out;
+}
+
+
+.mobilenav .nav-link:hover {
+    color: #f43b47;
+}
+
+/* === Close Button === */
+.close-btn {
+    font-size: 1.2rem;
+    padding: 0.5rem 1.2rem;
+    background-color: #dc3545;
     color: white;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    align-self: flex-end;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* === Responsive Mobile Adjustments === */
+@media (max-width: 576px) {
+    .mobilenav {
+        align-items: center;
+        padding: 1.5rem;
+        text-align: center;
+    }
+
+    .mobilenav .nav-item {
+        font-size: 1.7rem;
+    }
+
+    .close-btn {
+        align-self: center;
+    }
+}
+
+.nav-btn:focus,
+.nav-btn:active {
+  outline: none !important;
+  box-shadow: none !important;
 }
