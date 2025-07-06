@@ -31,14 +31,14 @@ export default function Navbar() {
           <li className="nav-item">
             <Link className={`nav-link ${isActive("/")}`} href="/">HOME</Link>
           </li>
-          <li className="nav-item">
+          {/* <li className="nav-item">
             <Link className={`nav-link ${isActive("/projects")}`} href="/projects">PROJECTS</Link>
+          </li> */}
+          <li className="nav-item">
+            <Link className={`nav-link ${isActive("/experience")}`} href="/experience">EXPERIENCE</Link>
           </li>
           <li className="nav-item">
             <Link className={`nav-link ${isActive("/skills")}`} href="/skills">SKILLS</Link>
-          </li>
-          <li className="nav-item">
-            <Link className={`nav-link ${isActive("/experience")}`} href="/experience">EXPERIENCE</Link>
           </li>
           <li className="nav-item">
             <Link className="nav-link" href="mailto:areeganrajasekar@gmail.com">CONTACT</Link>
@@ -64,14 +64,14 @@ export default function Navbar() {
               <li className="nav-item">
                 <Link className={`nav-link ${isActive("/")}`} href="/" onClick={() => setNav(false)}>HOME</Link>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link className={`nav-link ${isActive("/projects")}`} href="/projects" onClick={() => setNav(false)}>PROJECTS</Link>
+              </li> */}
+              <li className="nav-item">
+                <Link className={`nav-link ${isActive("/experience")}`} href="/experience" onClick={() => setNav(false)}>EXPERIENCE</Link>
               </li>
               <li className="nav-item">
                 <Link className={`nav-link ${isActive("/skills")}`} href="/skills" onClick={() => setNav(false)}>SKILLS</Link>
-              </li>
-              <li className="nav-item">
-                <Link className={`nav-link ${isActive("/experience")}`} href="/experience" onClick={() => setNav(false)}>EXPERIENCE</Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" href="mailto:areeganrajasekar@gmail.com" onClick={() => setNav(false)}>CONTACT</Link>

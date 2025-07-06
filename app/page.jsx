@@ -39,7 +39,7 @@ export default function Home() {
         >
           <div className="row">
             <div className="col-lg-6 text-end mb-2">
-              <a target='_blank' href="/resume.pdf">
+              <a target='_blank' href="/reegan_rajasekar.pdf">
                 <button className='btn-border rounded-pill px-5 py-2'>Resume</button>
               </a>
             </div>
@@ -58,13 +58,13 @@ export default function Home() {
           transition={{ delay: 0.5, duration: 0.6 }}
         >
           <a target='_blank' href="https://www.linkedin.com/in/reeganrajasekar">
-            <Image src={linkedin} alt='LinkedIn' width={24} height={24} />
+            <Image src={linkedin} alt='LinkedIn' width={40} height={40} />
           </a>
           <a target='_blank' href="https://github.com/reeganrajasekar">
-            <Image src={github} alt='GitHub' width={24} height={24} />
+            <Image src={github} alt='GitHub' width={40} height={40} />
           </a>
           <a target='_blank' href="https://instagram.com/reeganrajasekar">
-            <Image src={instagram} alt='Instagram' width={24} height={24} />
+            <Image src={instagram} alt='Instagram' width={40} height={40} />
           </a>
         </motion.div>
       </section>

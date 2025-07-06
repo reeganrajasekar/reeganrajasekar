@@ -1,0 +1,7 @@
+RewriteEngine On
+
+# Make sure the file with .html exists
+RewriteCond %{REQUEST_FILENAME}.html -f
+
+# Rewrite URLs without extension to .html
+RewriteRule ^([a-zA-Z0-9_-]+)$ $1.html [L]

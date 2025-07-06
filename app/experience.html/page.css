@@ -1,16 +1,35 @@
-.heading{
-    font-size: 2rem;
-    font-weight: 700;
-    color: #f43b47;
-    text-align: center;
+.heading {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #1f2937;
+  text-align: center;
+  color: #f43b47;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
 }
-.top{
+
+.heading::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background-color: #f43b47;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.top {
   min-height: 90svh !important;
 }
-section{
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+
+section {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
@@ -109,6 +128,7 @@ section{
   position: relative;
   padding-inline: 1.5rem;
 }
+
 .ul li .title {
   overflow: hidden;
   padding-block-start: 1.5rem;
@@ -120,12 +140,15 @@ section{
   .ul {
     grid-template-columns: 1fr var(--line-w) 1fr;
   }
+
   .ul::before {
     grid-column: 2;
   }
+
   .ul li:nth-child(odd) {
     grid-column: 1;
   }
+
   .ul li:nth-child(even) {
     grid-column: 3;
   }
@@ -144,49 +167,61 @@ section{
     transform: translate(-50%, -50%);
     left: calc(100% + var(--col-gap) + var(--line-w) / 2);
   }
+
   .ul li:nth-child(odd) .date {
     border-radius: 0 calc(var(--dateH) / 2) calc(var(--dateH) / 2) 0;
   }
 }
 
 
-.badges{
-    display:inline;
-    color:white
+.badges {
+  display: inline;
+  color: white
 }
-.badges>span{
-    display:inline-block;
-    padding:5px 15px;
-    border-radius: 15px;
-    margin:5px;
+
+.badges>span {
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 15px;
+  margin: 5px;
 }
-.html{
-    background-color: #e34c26;
+
+.html {
+  background-color: #e34c26;
 }
-.css{
-    background-color: #264de4;
+
+.css {
+  background-color: #264de4;
 }
-.js{
-    background-color: #F0DB4F;
+
+.js {
+  background-color: #F0DB4F;
 }
-.react{
-    background-color: #7cc5d9;
+
+.react {
+  background-color: #7cc5d9;
 }
-.mongo{
-    background-color: #4DB33D;
+
+.mongo {
+  background-color: #4DB33D;
 }
-.node{
-    background-color: #68A063;
+
+.node {
+  background-color: #68A063;
 }
-.python{
-    background-color: #4B8BBE;
+
+.python {
+  background-color: #4B8BBE;
 }
-.php{
-    background-color: #474A8A;
+
+.php {
+  background-color: #474A8A;
 }
-.sql{
-    background-color: #00758F;
+
+.sql {
+  background-color: #00758F;
 }
-.aws{
-    background-color: #FF9900;
+
+.aws {
+  background-color: #FF9900;
 }
