@@ -1,3 +1,24 @@
+const certifications = [
+  { title: "Full Stack Development", issuer: "ICT (IBM)" },
+  { title: "Full Stack JavaScript", issuer: "Sirius (CDW)" },
+  { title: "Full Stack Development", issuer: "Udemy" },
+];
+
+const awards = [
+  {
+    title: "Best Employee of the Quarter",
+    issuer: "SCION",
+    detail:
+      "Awarded for outstanding performance, system optimization and delivering high-impact production features.",
+  },
+  {
+    title: "Spotlight Award",
+    issuer: "UBTIINC",
+    detail:
+      "Recognized for exceptional individual contribution to critical project delivery and performance improvements.",
+  },
+];
+
 export default function Certifications() {
   return (
     <section
@@ -10,15 +31,22 @@ export default function Certifications() {
         <div>
           <h3>Certifications</h3>
           <ul>
-            <li>Full Stack Development · ICT (IBM)</li>
-            <li>Full Stack Development · Udemy</li>
+            {certifications.map(({ title, issuer }) => (
+              <li key={`${title}-${issuer}`}>
+                {title} · {issuer}
+              </li>
+            ))}
           </ul>
         </div>
         <div>
-          <h3>Awards</h3>
-          <ul>
-            <li>Best Employee of the Quarter · SCION</li>
-            <li>Spotlight Award · UBTIINC</li>
+          <h3>Awards &amp; Recognition</h3>
+          <ul className="award-list">
+            {awards.map(({ title, issuer, detail }) => (
+              <li key={title}>
+                <strong>{title}</strong> — {issuer}
+                <span className="award-detail">{detail}</span>
+              </li>
+            ))}
           </ul>
         </div>
       </div>

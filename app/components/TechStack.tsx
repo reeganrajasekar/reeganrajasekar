@@ -1,11 +1,22 @@
-const stackText = `💻 Languages       : JavaScript, TypeScript, PHP, C#, SQL
-🌐 Frontend        : React, Tailwind CSS, HTML5, CSS3, JavaScript, TypeScript
-⚙️ Backend         : .NET Core, ASP.NET MVC, PHP, FastAPI, RESTful APIs
-🤖 AI Systems      : RAG, MCP, LLM integrations
-🛢️ Databases       : MySQL, SQL Server, MongoDB, Redis
-☁️ Cloud/DevOps    : Microsoft Azure, Docker, Kubernetes, Azure DevOps, CI/CD
-🛠️ Tools           : Git, Firebase, Postman, Linux, Agile/Scrum
-🔐 Practices       : OWASP Top 10, Secure API Design, SEO`;
+const stackText = `💻 Languages       : C#, JavaScript, TypeScript, SQL
+🌐 Frontend        : React, Angular, Tailwind CSS, HTML5, CSS3
+⚙️ Backend         : .NET Core (C#), ASP.NET MVC, RESTful APIs, FastAPI
+🤖 AI Systems      : MCP servers, RAG pipelines, LLM integration, OpenAI, Azure AI Foundry
+🛢️ Databases       : SQL Server, MySQL, PostgreSQL, Redis
+☁️ Cloud/DevOps    : Microsoft Azure (App Services, Azure SQL, Blob Storage), Azure DevOps,
+                     CI/CD Pipelines, Docker, Kubernetes, Linux
+🔐 Security        : OWASP Top 10, Authentication & Authorization, Secure API Design
+🛠️ Tools           : Git, Firebase, Postman, Agile/Scrum`;
+
+const categories = [
+  "Frontend",
+  "Backend",
+  "AI Systems",
+  "Databases",
+  "Security",
+  "Cloud & DevOps",
+  "Tools & Others",
+];
 
 export default function TechStack() {
   return (
@@ -20,6 +31,18 @@ export default function TechStack() {
           <code>{stackText}</code>
         </pre>
       </div>
+      <div className="chip-row" aria-label="Skill categories">
+        {categories.map((category) => (
+          <span className="chip" key={category}>
+            {category}
+          </span>
+        ))}
+      </div>
+      <p className="section-lead">
+        Day to day I work across the .NET and React/Angular stack, backed by SQL
+        Server and Azure — and increasingly by MCP, RAG and agentic AI services
+        that make those systems smarter without compromising security.
+      </p>
     </section>
   );
 }

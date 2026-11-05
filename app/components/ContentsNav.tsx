@@ -8,6 +8,7 @@ const sections: ReadonlyArray<readonly [string, string]> = [
   ["projects", "Projects"],
   ["tech-stack", "Tech stack"],
   ["education", "Education"],
+  ["certifications", "Credentials"],
   ["contact", "Contact"],
 ];
 

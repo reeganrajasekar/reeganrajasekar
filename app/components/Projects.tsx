@@ -1,34 +1,44 @@
 const projects = [
-  [
-    "SJCET Website",
-    "Feb 2023 – Mar 2023",
-    "Built the St. Joseph’s College of Engineering and Technology website and its department subdomains.",
-    "React · PHP · MySQL",
-  ],
-  [
-    "IoT Smart Security & Locker Access Control · Vsafe",
-    "SCION",
-    "Designed a secure IoT access-control application with a .NET Core backend, real-time device communication, authentication, and OWASP-compliant security.",
-    ".NET Core · IoT · OWASP",
-  ],
-  [
-    "Employee Management & Access Portal",
-    "SCION",
-    "Built an internal portal to manage users, roles, access rights, and activity logs with secure authentication and authorization.",
-    ".NET Core · SQL Server · Redis",
-  ],
-  [
-    "ESG Analytics Dashboard",
-    "UBTIINC",
-    "Developed a data-driven dashboard to visualize environmental, social, and governance metrics for internal stakeholders.",
-    ".NET · SQL Server",
-  ],
-  [
-    "Secure eCommerce Web Application",
-    "SCION",
-    "Designed a full-stack commerce application with secure authentication, product management, cart workflows, and an admin portal.",
-    ".NET Core · React · SQL",
-  ],
+  {
+    name: "Warehouse Management System",
+    context: "Adaptive",
+    description:
+      "Warehouse management system built on .NET Core and ASP.NET MVC to support day-to-day warehouse operations.",
+    tech: ".NET Core · ASP.NET MVC",
+    href: null,
+  },
+  {
+    name: "IoT Smart Security & Locker Access Control (Vsafe)",
+    context: "SCION",
+    description:
+      "Secure IoT access-control application with a .NET Core backend, real-time device communication, user authentication and OWASP-compliant security practices.",
+    tech: ".NET Core · IoT · OWASP",
+    href: null,
+  },
+  {
+    name: "ESG Analytics Dashboard",
+    context: "UBTIINC",
+    description:
+      "Data-driven dashboard that visualises environmental, social and governance metrics for internal stakeholders.",
+    tech: ".NET · SQL Server",
+    href: null,
+  },
+  {
+    name: "Secure eCommerce Web Application",
+    context: "SCION",
+    description:
+      "Full-stack eCommerce application with secure user authentication, product management, cart and admin portal.",
+    tech: ".NET Core · React · SQL Server",
+    href: null,
+  },
+  {
+    name: "SJCET College Website",
+    context: "2023",
+    description:
+      "Built the St. Joseph's College of Engineering and Technology website and its department subdomains.",
+    tech: "React · PHP · MySQL",
+    href: "https://sjcettnj.edu.in/",
+  },
 ];
 
 export default function Projects() {
@@ -39,17 +49,22 @@ export default function Projects() {
       aria-labelledby="projects-title"
     >
       <h2 id="projects-title">🚀 Projects</h2>
+      <p className="section-lead">
+        Selected work across enterprise operations, IoT security, analytics and
+        commerce — most of it delivered end-to-end, from architecture to
+        production support.
+      </p>
       <div className="project-grid">
-        {projects.map(([name, date, description, tech], index) => (
+        {projects.map(({ name, context, description, tech, href }) => (
           <article className="project-card" key={name}>
             <h3>{name}</h3>
-            <small>{date}</small>
+            <small>{context}</small>
             <p>{description}</p>
             <span>{tech}</span>
-            {index === 0 ? (
+            {href ? (
               <a
                 className="project-link"
-                href="https://sjcettnj.edu.in/"
+                href={href}
                 target="_blank"
                 rel="noreferrer"
               >

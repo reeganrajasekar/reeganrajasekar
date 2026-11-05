@@ -1,5 +1,54 @@
+# Reegan Rajasekar — portfolio (static export)
+# Caching, compression and baseline security headers for Apache hosts.
+
+AddDefaultCharset UTF-8
+
+# --- Compression -----------------------------------------------------------
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/css text/xml
+  AddOutputFilterByType DEFLATE application/javascript application/json
+  AddOutputFilterByType DEFLATE application/manifest+json application/xml
+  AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+<IfModule mod_brotli.c>
+  AddOutputFilterByType BROTLI_COMPRESS text/html text/plain text/css text/xml
+  AddOutputFilterByType BROTLI_COMPRESS application/javascript application/json
+  AddOutputFilterByType BROTLI_COMPRESS image/svg+xml
+</IfModule>
+
+# --- Correct MIME types ----------------------------------------------------
+<IfModule mod_mime.c>
+  AddType application/manifest+json .webmanifest
+  AddType application/pdf .pdf
+  AddType image/svg+xml .svg
+</IfModule>
+
+# --- Caching ---------------------------------------------------------------
 <IfModule mod_headers.c>
-  <FilesMatch "\.(?:css|gif|ico|jpe?g|js|png|svg|webp|woff2)$">
+  # Fingerprinted build assets never change.
+  <FilesMatch "\.(?:css|gif|ico|jpe?g|js|mjs|png|svg|webp|woff2?)$">
     Header set Cache-Control "public, max-age=31536000, immutable"
   </FilesMatch>
+
+  # HTML and crawler files revalidate so content updates go live immediately.
+  <FilesMatch "\.(?:html|txt|xml|webmanifest)$">
+    Header set Cache-Control "public, max-age=0, must-revalidate"
+  </FilesMatch>
+
+  # The CV changes occasionally, not every visit.
+  <FilesMatch "\.pdf$">
+    Header set Cache-Control "public, max-age=86400"
+  </FilesMatch>
+
+  Header set X-Content-Type-Options "nosniff"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+
+  # Remove noisy framework headers.
+  Header unset X-Powered-By
 </IfModule>
+
+# --- Friendly 404 ----------------------------------------------------------
+ErrorDocument 404 /404.html

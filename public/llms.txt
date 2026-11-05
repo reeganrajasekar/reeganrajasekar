@@ -1,19 +1,55 @@
-# Reegan Rajasekar
+# Reegan Rajasekar A
 
-> Portfolio of Reegan Rajasekar Arockiyaraj, a Full Stack Engineer specializing in .NET, React, SQL Server, Azure, Docker, and OWASP security.
+> Full Stack Engineer with 3.5+ years of experience building secure, scalable web and mobile applications with .NET (C#), React, Angular, SQL Server and Azure. Currently building production AI systems — MCP servers, RAG pipelines and agents on OpenAI and Azure AI Foundry. Based in Tiruchirappalli, Tamil Nadu, India. Open to remote and hybrid roles.
 
-## About
+## Contact
 
+- Email: areeganrajasekar@gmail.com
+- Phone: +91 70940 93096
+- Location: Tiruchirappalli, Tamil Nadu, India
 - [Portfolio](https://reegan.is-a.dev/)
-- [Contact](https://reegan.is-a.dev/#contact)
-- [Resume](https://reegan.is-a.dev/Reegan-Rajasekar-CV.pdf)
+- [CV (PDF)](https://reegan.is-a.dev/Reegan-Rajasekar-CV.pdf)
 - [GitHub](https://github.com/reeganrajasekar)
 - [LinkedIn](https://www.linkedin.com/in/reeganrajasekar)
 
-## Content
+## Summary
 
+- 3.5+ years across enterprise web apps, internal portals, IoT access control, eCommerce, analytics dashboards and AI tooling.
+- Core stack: .NET Core (C#), ASP.NET MVC, REST APIs, React, Angular, SQL Server, PostgreSQL, Redis, Azure, Docker, Kubernetes, Linux.
+- AI work: MCP servers with 100+ tools exposed to agents, RAG pipelines over ERP and payroll data, containerised agents on Azure AI Foundry, prompt-injection checks, per-tenant rate limits, caching and context budgeting for cost control.
+- Security: OWASP Top 10, secure authentication and authorization, input validation, API hardening.
+
+## Experience
+
+- Software Engineer II — Adaptive Bizapp Systems, Tiruchirappalli (Feb 2026 – Present)
+- Software Engineer — SCION, Thanjavur (Dec 2024 – Feb 2026)
+- Junior Software Engineer — UBTIINC, Chennai (Jun 2023 – Dec 2024; progressed from Intern → Trainee → Junior Software Engineer)
+- Full Stack Developer Internship — Sirius Computer Solutions (Jun 2022 – Jul 2022)
+
+## Selected projects
+
+- Warehouse Management System — .NET Core, ASP.NET MVC, SQL Server (Adaptive)
+- IoT Smart Security & Locker Access Control (Vsafe) — .NET Core, IoT, OWASP (SCION)
+- ESG Analytics Dashboard — .NET, SQL Server (UBTIINC)
+- Secure eCommerce Web Application — .NET Core, React, SQL Server (SCION)
+- SJCET College Website — React, PHP, MySQL (https://sjcettnj.edu.in/)
+
+## Credentials
+
+- B.E. Computer Science & Engineering — St. Joseph's College of Engineering and Technology, Thanjavur (2019 – 2023, 83%)
+- Full Stack Development — ICT (IBM)
+- Full Stack JavaScript — Sirius (CDW)
+- Full Stack Development — Udemy
+- Best Employee of the Quarter — SCION
+- Spotlight Award — UBTIINC
+
+## Site sections
+
+- [About](https://reegan.is-a.dev/#about)
 - [Experience](https://reegan.is-a.dev/#experience)
 - [Projects](https://reegan.is-a.dev/#projects)
-- [Tech Stack](https://reegan.is-a.dev/#tech-stack)
+- [Tech stack](https://reegan.is-a.dev/#tech-stack)
 - [Education](https://reegan.is-a.dev/#education)
+- [Certifications & awards](https://reegan.is-a.dev/#certifications)
+- [Contact](https://reegan.is-a.dev/#contact)
 - [Sitemap](https://reegan.is-a.dev/sitemap.xml)

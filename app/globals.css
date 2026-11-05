@@ -853,6 +853,113 @@ html:has(#theme-toggle:checked) .profile-avatar-wrap {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
 }
+.skip-link {
+  position: absolute;
+  top: -4rem;
+  left: 1rem;
+  z-index: 50;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  color: #ffffff;
+  background: #1f6feb;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+.skip-link:focus-visible {
+  top: 0.75rem;
+}
+.profile-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1.15rem;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.62rem 1.05rem;
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  line-height: 1;
+  text-decoration: none;
+  transition:
+    transform 150ms ease,
+    border-color 150ms ease,
+    background 150ms ease,
+    color 150ms ease;
+}
+.btn:hover,
+.btn:focus-visible {
+  transform: translateY(-1px);
+}
+.btn-primary {
+  border-color: transparent;
+  color: #06130a;
+  background: linear-gradient(90deg, #39d353, #58a6ff);
+}
+.btn-primary:hover {
+  color: #06130a;
+  box-shadow: 0 8px 22px rgba(59, 130, 246, 0.28);
+}
+.btn-ghost {
+  color: var(--text);
+  background: var(--panel);
+}
+.btn-ghost:hover {
+  border-color: var(--link);
+  color: var(--link);
+}
+.readme-section .section-lead {
+  margin: 0 0 1.1rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+.chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 0.85rem 0 0.2rem;
+}
+.chip {
+  padding: 0.3rem 0.7rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--muted);
+  background: var(--panel-soft);
+  font-size: 0.75rem;
+}
+.experience-role .experience-note {
+  margin: 0.45rem 0 0;
+  color: var(--green) !important;
+  font-size: 0.8rem !important;
+}
+.detail-item .education-note {
+  margin: 0.4rem 0 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.6;
+}
+.award-list li {
+  margin-bottom: 0.75rem;
+}
+.award-detail {
+  display: block;
+  margin-top: 0.15rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+.footer-links {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1rem;
+}
+
 @media (max-width: 720px) {
   .github-shell {
     width: min(100% - 1rem, 1120px);
@@ -898,6 +1005,19 @@ html:has(#theme-toggle:checked) .profile-avatar-wrap {
   }
   .profile-headline {
     font-size: 0.88rem;
+  }
+  .code-card pre {
+    font-size: 0.76rem;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+  }
+  .profile-actions {
+    justify-content: center;
+    width: 100%;
+  }
+  .btn {
+    flex: 1 1 12rem;
+    justify-content: center;
   }
   .repository-grid,
   .contribution-layout,

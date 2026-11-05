@@ -4,9 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev --webpack",
-    "build": "next build && node scripts/strip-next-runtime.mjs",
-    "preview": "node scripts/serve-out.mjs",
-    "start": "next start"
+    "build": "next build",
+    "preview": "node scripts/serve-out.mjs"
   },
   "dependencies": {
     "next": "^16.3.5",

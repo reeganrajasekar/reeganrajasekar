@@ -2,70 +2,117 @@ import "./globals.css";
 import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
 
+const siteUrl = "https://reegan.is-a.dev";
+const siteTitle = "Reegan Rajasekar | Full Stack .NET & AI Engineer";
+const siteDescription =
+  "Full Stack Engineer with 3.5+ years in .NET, React, Angular, Azure and AI — building secure APIs, MCP servers and RAG pipelines. Tiruchirappalli, India.";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://reegan.is-a.dev"),
+  metadataBase: new URL(siteUrl),
   title: {
-    default: "Reegan Rajasekar | Full-Stack Developer",
+    default: siteTitle,
     template: "%s | Reegan Rajasekar",
   },
-  description:
-    "Portfolio of Reegan Rajasekar A, Software Engineer II at Adaptive Bizapp Systems, building secure, scalable applications with .NET, React, Azure, Python, and AI systems.",
+  description: siteDescription,
+  applicationName: "Reegan Rajasekar — Portfolio & CV",
+  authors: [{ name: "Reegan Rajasekar A", url: siteUrl }],
+  creator: "Reegan Rajasekar A",
+  publisher: "Reegan Rajasekar A",
+  category: "technology",
   keywords: [
     "Reegan Rajasekar",
-    "Full-stack Developer",
+    "Reegan Rajasekar A",
+    "Full Stack Engineer",
+    "Full Stack Developer India",
+    ".NET Developer",
+    "C# Developer",
+    "ASP.NET MVC Developer",
     "React Developer",
     "Angular Developer",
-    ".NET Developer",
-    "Node.js",
-    "Web Developer Portfolio",
-    "Remote Developer India",
+    "Azure Developer",
+    "FastAPI Developer",
+    "AI Engineer India",
+    "MCP server developer",
+    "RAG pipeline",
+    "OpenAI Azure AI Foundry",
+    "SQL Server Developer",
+    "PostgreSQL",
+    "Docker Kubernetes",
+    "OWASP secure coding",
+    "Tiruchirappalli developer",
+    "Tamil Nadu software engineer",
+    "Remote .NET developer",
+    "Hire full stack developer",
+    "Software Engineer II",
+    "Developer portfolio",
   ],
-  authors: [{ name: "Reegan Rajasekar", url: "https://reegan.is-a.dev" }],
-  creator: "Reegan Rajasekar",
   alternates: { canonical: "/" },
+  manifest: "/favicon/site.webmanifest",
+  icons: {
+    icon: [
+      { url: "/favicon/favicon.ico" },
+      { url: "/favicon/favicon-96x96.png", sizes: "96x96", type: "image/png" },
+      { url: "/favicon/favicon.svg", type: "image/svg+xml" },
+    ],
+    shortcut: "/favicon/favicon.ico",
+    apple: [
+      {
+        url: "/favicon/apple-touch-icon.png",
+        sizes: "180x180",
+        type: "image/png",
+      },
+    ],
+  },
+  appleWebApp: {
+    capable: true,
+    title: "Reegan Rajasekar",
+    statusBarStyle: "black-translucent",
+  },
+  formatDetection: { telephone: false, email: false, address: false },
   openGraph: {
-    title: "Reegan Rajasekar | Full-Stack Developer",
-    description:
-      "Portfolio of Reegan Rajasekar, full-stack developer specializing in Angular, React, .NET Core, Node.js, and Azure.",
-    url: "/",
-    siteName: "reegan.is-a.dev",
     type: "website",
+    url: siteUrl,
+    siteName: "Reegan Rajasekar",
+    title: siteTitle,
+    description: siteDescription,
+    locale: "en_IN",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Reegan Rajasekar — Full Stack .NET & AI Engineer",
+      },
+    ],
   },
   twitter: {
-    card: "summary",
-    title: "Reegan Rajasekar | Full-Stack Developer",
+    card: "summary_large_image",
+    title: siteTitle,
+    description: siteDescription,
+    images: [
+      {
+        url: "/og-image.png",
+        alt: "Reegan Rajasekar — Full Stack .NET & AI Engineer",
+      },
+    ],
   },
-  robots: { index: true, follow: true },
 };
 
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  maximumScale: 1,
-  userScalable: false,
-  themeColor: "#f43b47",
+  maximumScale: 5,
+  themeColor: [
+    { media: "(prefers-color-scheme: dark)", color: "#0d1117" },
+    { media: "(prefers-color-scheme: light)", color: "#f6f8fa" },
+  ],
 };
 
 export default function RootLayout({
   children,
 }: Readonly<{ children: ReactNode }>) {
   return (
-    <html lang="en">
-      <head>
-        <link
-          rel="icon"
-          type="image/png"
-          href="/favicon/favicon-96x96.png"
-          sizes="96x96"
-        />
-        <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
-        <link rel="shortcut icon" href="/favicon/favicon.ico" />
-        <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href="/favicon/apple-touch-icon.png"
-        />
-      </head>
+    <html lang="en-IN">
       <body>{children}</body>
     </html>
   );

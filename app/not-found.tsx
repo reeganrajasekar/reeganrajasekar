@@ -1,5 +1,10 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import ThemeToggle from "./components/ThemeToggle";
+
+export const metadata: Metadata = {
+  title: "Page not found",
+};
 
 export default function NotFoundPage() {
   return (
