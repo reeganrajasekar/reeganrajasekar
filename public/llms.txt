@@ -1,0 +1,19 @@
+# Reegan Rajasekar
+
+> Portfolio of Reegan Rajasekar Arockiyaraj, a Full Stack Engineer specializing in .NET, React, SQL Server, Azure, Docker, and OWASP security.
+
+## About
+
+- [Portfolio](https://reegan.is-a.dev/)
+- [Contact](https://reegan.is-a.dev/#contact)
+- [Resume](https://reegan.is-a.dev/Reegan-Rajasekar-CV.pdf)
+- [GitHub](https://github.com/reeganrajasekar)
+- [LinkedIn](https://www.linkedin.com/in/reeganrajasekar)
+
+## Content
+
+- [Experience](https://reegan.is-a.dev/#experience)
+- [Projects](https://reegan.is-a.dev/#projects)
+- [Tech Stack](https://reegan.is-a.dev/#tech-stack)
+- [Education](https://reegan.is-a.dev/#education)
+- [Sitemap](https://reegan.is-a.dev/sitemap.xml)
